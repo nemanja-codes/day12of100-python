@@ -11,7 +11,8 @@ def choose_difficulty():
     elif difficulty == "hard":
         return HARD_LEVEL_TURNS
     else:
-        print("Invalid input. Please try again")
+        print("Invalid input. Please try again.")
+        return choose_difficulty()
 
 def check_guess(guess, number):
     if guess == number:
